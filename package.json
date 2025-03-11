@@ -11,7 +11,8 @@
     "format": "prettier \"**/*.{ts,tsx,js,json}\" --ignore-path .gitIgnore",
     "format:check": "pnpm format --check",
     "format:write": "pnpm format --write",
-    "validate": "pnpm format:write && pnpm lint && pnpm tsc && pnpm build"
+    "validate": "pnpm format:write && pnpm lint && pnpm tsc && pnpm build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "15.2.2",
@@ -28,6 +29,7 @@
     "eslint-config-next": "15.2.2",
     "prettier": "^3.5.3",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "husky": "^8.0.0"
   }
 }
